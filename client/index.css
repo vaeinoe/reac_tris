@@ -1,0 +1,136 @@
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+  background-color: #000;
+  color: #fff;
+}
+
+ol, ul {
+  padding-left: 30px;
+}
+
+.mainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.tile {
+  border: none;
+  float: left;
+  height: 10px;
+  width: 10px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+}
+
+.tile-active {
+}
+
+.tile-red {
+  background: linear-gradient(-45deg, #FF0035, #000035);
+}
+
+.tile-green {
+  background: linear-gradient(-45deg, #F89993, #F80093);
+}
+
+.tile-blue {
+  background: linear-gradient(-45deg, #0E0E1E, #0E8E8F);
+}
+
+.tile-cyan {
+  background: linear-gradient(-45deg, #BB4984, #444984);
+}
+
+.tile-magenta {
+  background: linear-gradient(-45deg, #116699, #FFFFFF);
+}
+
+.tile-yellow {
+  background: linear-gradient(-45deg, #4E3E46, #8E8E46);
+}
+
+.tile-key {
+  background: linear-gradient(-45deg, #000000, #888888);
+}
+
+
+.tile-empty {
+  background: #cde;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+@media all and (min-width: 200px) and (min-height: 320px) {
+  .tile {
+    height: 12px;
+    width: 12px;    
+  }
+}
+
+@media all and (min-width: 200px) and (min-height: 400px) {
+  .tile {
+    height: 16px;
+    width: 16px;    
+  }
+}
+
+@media all and (min-width: 200px) and (min-height: 500px) {
+  .tile {
+    height: 22px;
+    width: 22px;    
+  }
+}
+
+@media all and (min-width: 350px) and (min-height: 550px) {
+  .tile {
+    height: 24px;
+    width: 24px;    
+  }
+}
+
+@media all and (min-width: 600px) and (min-height: 750px) {
+  .tile {
+    height: 32px;
+    width: 32px;    
+  }
+}
+
+@media all and (min-width: 750px) and (min-height: 1000px) {
+  .tile {
+    height: 42px;
+    width: 42px;    
+  }
+}
+
+@media all and (min-width: 1000px) and (min-height: 1200px) {
+  .tile {
+    height: 54px;
+    width: 54px;    
+  }
+}
